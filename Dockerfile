@@ -2,7 +2,7 @@
 # Build stage
 #
 
-FROM maven:3.8.4-openjdk-17-slim AS build
+FROM maven:3.8.4-openjdk-17-oracle AS build
 
 WORKDIR usr/src/app
 
@@ -14,7 +14,7 @@ RUN mvn clean package
 # Package stage
 #
 
-FROM openjdk:17-jre-slim
+FROM openjdk:17-oracle
 
 ARG JAR_NAME="spring-boot-helloworld"
 
