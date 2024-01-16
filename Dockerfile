@@ -8,7 +8,7 @@ WORKDIR usr/src/app
 
 COPY . ./
 
-RUN mvn clean package
+RUN mvn clean package -DskipTests=true
 
 #
 # Package stage

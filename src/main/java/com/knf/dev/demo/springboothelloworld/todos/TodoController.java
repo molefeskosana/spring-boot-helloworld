@@ -1,5 +1,6 @@
 package com.knf.dev.demo.springboothelloworld.todos;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,6 +10,7 @@ public class TodoController {
 
     private final TodoRepository todoRepository;
 
+    @Autowired
     public TodoController(TodoRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
