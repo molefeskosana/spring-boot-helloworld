@@ -16,7 +16,7 @@ RUN mvn clean package
 
 FROM openjdk:17-oracle
 
-ARG JAR_NAME="spring-boot-helloworld"
+ARG JAR_NAME="spring-boot-helloworld-0.0.1-SNAPSHOT"
 
 WORKDIR /usr/src/app
 
