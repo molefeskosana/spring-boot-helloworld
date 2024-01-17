@@ -17,7 +17,7 @@ jobs:
         with:
           login-server: "molfcr.azurecr.io"
           username: "MolfCR"
-          password: "W5KUDiGexCsPe2yhJ13iBqnvMQqqMpkHkjCuONXeVt+ACRBhJcx7"
+          password: "5vV61of3i443niRlcmFyQIQaCNbR/T+QSqTXf8AlaV+ACRDcxldQ"
       - run: |
           docker build . -t molfcr.azurecr.io/knowledgefactory:${{ github.sha }}
           docker push molfcr.azurecr.io/knowledgefactory:${{ github.sha }}
